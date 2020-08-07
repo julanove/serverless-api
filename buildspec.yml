@@ -3,17 +3,14 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto11
-  pre_build:
+      nodejs: 10
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - npm install serverless -g
+      - npm install
   build:
     commands:
-      - echo Build started on `date`
-      - mvn install
-  post_build:
-    commands:
-      - echo Build completed on `date`
+      - sls deploy -s dev
 artifacts:
   files:
-    - target/messageUtil-1.0.jar
+    - '**/*'
+  base-directory: .serverless
