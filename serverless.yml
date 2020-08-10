@@ -7,6 +7,6 @@ provider:
 
 functions:
   getMsg:
-    handler: handler.helo
+    handler: handler.hello
     events:
       - http: GET /
