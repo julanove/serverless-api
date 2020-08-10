@@ -1,4 +1,4 @@
-service: serverless-nodejs-api
+service: serverless-nodejs-api-alpha
 
 provider:
   name: aws
@@ -7,6 +7,6 @@ provider:
 
 functions:
   getMsg:
-    handler: handler.api
+    handler: handler.helo
     events:
       - http: GET /
