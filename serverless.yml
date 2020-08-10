@@ -9,17 +9,6 @@ provider:
     - Effect: "Allow"
       Action: 
           - "s3:*"
-          - cloudformation: CreateStack
-          - cloudformation: DescribeStacks
-          - cloudformation: CreateChangeSet
-          - cloudformation: ListStacks
-          - cloudformation: UpdateStack
-          - cloudformation: DescribeChangeSet
-          - cloudformation: ExecuteChangeSet
-          - lambda: UpdateFunctionCode
-          - lambda: UpdateFunctionConfig
-          - lambda: GetFunctionConfiguration
-          - lambda: AddPermission
       Resource: "*"
 
 functions:
