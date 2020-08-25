@@ -5,7 +5,7 @@ module.exports.hello = async event => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: 'Changing Lambda Message to 9.0',
+        message: 'Hello world version 2',
         input: event,
       },
       null,
