@@ -16,5 +16,3 @@ functions:
     handler: handler.hello
     events:
       - http: GET /
-  package:
-    artifact: https://serverless-nodejs-api-al-serverlessdeploymentbuck-g6ygsogopite.s3-ap-northeast-1.amazonaws.com/fak.zip
