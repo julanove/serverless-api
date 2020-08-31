@@ -9,7 +9,7 @@ phases:
       - npm install
   build:
     commands:
-      - sls deploy function -f getMsg -r ap-northeast-1 -s dev
+      - sls deploy  -r ap-northeast-1 -s dev
 artifacts:
   files:
     - '**/*'
