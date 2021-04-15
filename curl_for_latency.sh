@@ -45,7 +45,7 @@ while (( x <= 3 )); do
     -o /dev/null \
     -s \
     -v \
-    -H 'apikey: MsiQFJidMN19hFitgvvDt1PPPsQ9qB816zYuLQ4n' \
+    -H 'apikey: ' \
     -X POST "https://ayjgw5rf9k.execute-api.ap-northeast-1.amazonaws.com/production"
     ((x++))
 done
